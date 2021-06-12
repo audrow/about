@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .my-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .head-shot {
+      display: flex;
+      justify-content: center;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    img.circle {
+      max-width: clamp(150px, 33vw, 200px);
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+    }
+
+    .bio {
+      display: flex;
+      justify-content: center;
+    }
+
+    .bio p {
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head-shot">
+    <img class="circle" src="../imgs/audrow.jpg" alt="A photo of Audrow">
+  </div>
+  <div class="my-box">
+    <div class="heading">
+      <h1>
+        Audrow Nash
+      </h1>
+    </div>
+    <div class="bio">
+      <p>
+        Hi, I'm Audrow - I'm a software engineer at
+        <a href="https://www.openrobotics.org/" target="_blank">Open Robotics</a>.
+        Previously, I led <a href="https://robohub.org/podcast" target="_blank">Robohub's podcast</a>.
+        Outside of robotics, I do improv.
+      </p>
+    </div>
+    <div class="links">
+      <div>
+        <a href="https://github.com/audrow" target="_blank">Github</a>
+      </div>
+      <div>
+        <a href="./files/Resume-AudrowNash.pdf" target="_blank">Resume</a>
+      </div>
+      <div>
+        <a href="https://doodle.com/mm/audrow/connect" target="_blank">Schedule a call</a>
+      </div>
+      <div>
+        <a href="mailto:audrow@hey.com" target="_blank">Contact</a>
+      </div>
+      </ul>
+      </address>
+    </div>
+  </div>
+</body>
+
+</html>
