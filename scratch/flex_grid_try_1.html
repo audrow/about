@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Audrow Nash's website</title>
   <style>
+
+
     .my-box {
-      display: flex;
-      flex-direction: column;
+      display: grid;
     }
 
     .head-shot {
       display: flex;
-      justify-content: center;
+      grid-area: head-shot;
     }
 
     .circle {
@@ -25,34 +26,80 @@
       max-width: clamp(150px, 33vw, 200px);
     }
 
-    .heading {
+    .heading, .bio, .head-shot, .links {
       display: flex;
-      justify-content: center;
+    }
+
+    .heading {
+      grid-area: heading;
     }
 
     .bio {
-      display: flex;
-      justify-content: center;
-    }
-
-    .bio p {
-      max-width: 350px;
-      text-align: center;
+      grid-area: bio;
     }
 
     .links {
-      display: flex;
+      grid-area: links;
       flex-direction: column;
-      align-items: center;
+    }
+
+    @media screen and (min-width: 600px) {
+      .my-box {
+        column-gap: 60px;
+        grid-template-areas:
+          "head-shot heading"
+          "head-shot bio"
+          "head-shot links"
+        ;
+        grid-template-columns: 1fr 1fr;
+      }
+      .head-shot {
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .head-shot img {
+        max-height: clamp(150px, 33vw, 100%);
+      }
+
+      .heading h1, .bio p, .links div {
+        max-width: 350px;
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .my-box {
+        grid-template-areas:
+          "head-shot"
+          "heading"
+          "bio"
+          "links"
+        ;
+      }
+
+      .head-shot, .heading, .bio {
+        justify-content: center;
+      }
+
+      .bio p {
+        max-width: 350px;
+        justify-content: center;
+        text-align: center;
+      }
+      .links {
+        text-align: center;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="head-shot">
-    <img class="circle" src="../imgs/audrow.jpg" alt="A photo of Audrow">
-  </div>
   <div class="my-box">
+    <div class="head-shot">
+      <img class="circle" src="../imgs/audrow.jpg" alt="A photo of Audrow">
+    </div>
     <div class="heading">
       <h1>
         Audrow Nash
