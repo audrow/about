@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    figure,
+    p {
+      margin: 0 0 0 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Roboto', sans-serif;
+      font-size: large;
+    }
+
+    @media screen and (max-width: 800px) {
+      .head-shot {
+        margin-top: 5vh;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      .head-shot {
+        margin-top: 15vh;
+      }
+    }
+
+    .head-shot {
+      display: flex;
+      justify-content: center;
+    }
+
+    .head-shot img {
+      display: flex;
+      max-width: 250px;
+    }
+
+    .bio {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 3vh;
+      margin-top: 3vh;
+    }
+
+    .bio p {
+      max-width: 400px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <figure class="head-shot">
+    <img src="../imgs/audrow.jpg" alt="A photo of Audrow" class="circle">
+  </figure>
+  <main class="bio">
+    <p>
+      Hi, I'm Audrow - I'm a software engineer at
+      <a href="https://www.openrobotics.org/" target="_blank">Open Robotics</a>,
+      and I host the <em>Sense Think Act Podcast</em>.
+      Previously, I led <a href="https://robohub.org/podcast" target="_blank">Robohub's podcast</a>.
+      Outside of robotics, I do improv and jiu jitsu.
+    </p>
+  </main>
+  <address>
+    <div class="links">
+      <a href="https://github.com/audrow" target="_blank">Github</a>
+      <a href="./files/Resume-AudrowNash.pdf" target="_blank">Resume</a>
+      <a href="https://doodle.com/mm/audrow/connect" target="_blank">Schedule a call</a>
+      <a href="mailto:audrow@hey.com" target="_blank">Contact</a>
+      <a href="https://twitter.com/audrow" target="_blank">Twitter</a>
+    </div>
+  </address>
+</body>
+
+</html>
