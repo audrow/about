@@ -1,3 +1,3 @@
 # README
 
-My personal website, hosted by Github Pages.
+A redirect to my [Linktree](https://linktr.ee/audrow).
